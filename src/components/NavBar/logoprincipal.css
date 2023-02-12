@@ -1,0 +1,7 @@
+.logoprincipal
+{
+    --size: 50px;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 25;
+}
