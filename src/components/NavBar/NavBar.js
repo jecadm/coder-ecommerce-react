@@ -1,17 +1,20 @@
 import React from "react";
 
-import estilo from 'styled-components';
+import logo from './Logo-sin-nombre-blanco.png'
+import NavBarMenu from "./NavBarMenu";
+
 
 function NavBar() {
   return (
-    <div>
-      <NavBarCont>
-        <h2>Esto inicia</h2>
-      </NavBarCont>
-    </div>
-  );
+    <>
+      <>
+       
+        <div>Logo-sin-nombre-blanco</div>
+        <NavBarMenu></NavBarMenu>
+      </>
+    </>
+  )
 }
 
 export default NavBar;
 
-const NavBarCont = estilo.nav;
