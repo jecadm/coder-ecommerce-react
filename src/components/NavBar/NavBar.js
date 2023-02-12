@@ -1,20 +1,17 @@
 import React from "react";
-import styled from "styled-components";
 
 import estilo from 'styled-components';
 
-
 function NavBar() {
   return (
-  <> 
-  <NavBarConts>
-     Este es el navBar
-  </NavBarConts>
- 
-  </>
-  )
-};
+    <div>
+      <NavBarCont>
+        <h2>Esto inicia</h2>
+      </NavBarCont>
+    </div>
+  );
+}
 
 export default NavBar;
 
-const NavBarConts = styled.nav
+const NavBarCont = estilo.nav;
