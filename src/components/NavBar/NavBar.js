@@ -16,6 +16,7 @@ function NavBar() {
         <li className="cart">
           <a href="/carrito">
             <FaShoppingCart />
+            {/* Crea en React un componente ItemListContainer. Impórtalo dentro de App.js, y abajo de NavBar.js.  */}
             <span className="item-count">2</span>
           </a>
         </li>
