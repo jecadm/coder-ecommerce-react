@@ -18,18 +18,18 @@ function NavBar() {
       </div>
       <ul>
         <li>
-          <a onClick={()=> clickHandler()}  href="/">Inicio</a>
+          <button className="navar-booton" onClick={()=> clickHandler()}  href="/">Inicio</button>
         </li>
         <li>
-          <a onClick={()=> clickHandler()} href="/productos">Productos</a>
+          <button className="navar-booton" onClick={()=> clickHandler()} href="/productos">Productos</button>
         </li>
         <li onClick={()=> clickHandler()}  className="cart">
-          <a href="/carrito">
+          <button className="navar-booton" href="/carrito">
          {/*  componente CartWidget con un ícono y una notificación mostrando un número hardcodeado  */}
             <FaShoppingCart />
             {/* número hardcodeado (colocado en el código). Ubica este componente (CartWidget) dentro de Navbar */}
             <span className="item-count">2</span>
-          </a>
+          </button>
         </li>
       </ul>
     </nav>
