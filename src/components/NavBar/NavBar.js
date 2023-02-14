@@ -4,6 +4,11 @@ import './NavBar.css';
 import { FaShoppingCart } from "react-icons/fa";
 
 function NavBar() {
+
+ const clickHandler = () =>{
+  alert("boton clikleable ")
+ }
+
   return (
     <nav className="navbar">
       <div>
@@ -13,12 +18,12 @@ function NavBar() {
       </div>
       <ul>
         <li>
-          <a href="/">Inicio</a>
+          <a onClick={()=> clickHandler()}  href="/">Inicio</a>
         </li>
         <li>
-          <a href="/productos">Productos</a>
+          <a onClick={()=> clickHandler()} href="/productos">Productos</a>
         </li>
-        <li className="cart">
+        <li onClick={()=> clickHandler()}  className="cart">
           <a href="/carrito">
          {/*  componente CartWidget con un ícono y una notificación mostrando un número hardcodeado  */}
             <FaShoppingCart />
@@ -29,6 +34,9 @@ function NavBar() {
       </ul>
     </nav>
   );
+
+ 
+
 }
 
 export default NavBar;
