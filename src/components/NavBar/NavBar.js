@@ -15,8 +15,9 @@ function NavBar() {
         </li>
         <li className="cart">
           <a href="/carrito">
+         {/*  componente CartWidget con un ícono y una notificación mostrando un número hardcodeado  */}
             <FaShoppingCart />
-            {/* Crea en React un componente ItemListContainer. Impórtalo dentro de App.js, y abajo de NavBar.js.  */}
+            {/* número hardcodeado (colocado en el código). Ubica este componente (CartWidget) dentro de Navbar */}
             <span className="item-count">2</span>
           </a>
         </li>
