@@ -14,7 +14,7 @@ function NavBar() {
       <div>
      {/*  Brand (título/nombre de la tienda) */}
 
-        <h2>Tienda de Morondanga</h2>
+        <h2>Tienda MORONDANGA</h2>
       </div>
       <ul>
         <li>
