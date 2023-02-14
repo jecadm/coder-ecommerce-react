@@ -1,20 +1,27 @@
+
 import React from "react";
-
-import logo from './Logo-sin-nombre-blanco.png'
-import NavBarMenu from "./NavBarMenu";
-
+import './NavBar.css';
+import { FaShoppingCart } from "react-icons/fa";
 
 function NavBar() {
   return (
-    <>
-      <>
-       
-        <div>Logo-sin-nombre-blanco</div>
-        <NavBarMenu></NavBarMenu>
-      </>
-    </>
-  )
+    <nav className="navbar">
+      <ul>
+        <li>
+          <a href="/">Inicio</a>
+        </li>
+        <li>
+          <a href="/productos">Productos</a>
+        </li>
+        <li className="cart">
+          <a href="/carrito">
+            <FaShoppingCart />
+            <span className="item-count">2</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  );
 }
 
 export default NavBar;
-
