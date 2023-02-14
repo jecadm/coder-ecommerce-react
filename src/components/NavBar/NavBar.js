@@ -6,6 +6,11 @@ import { FaShoppingCart } from "react-icons/fa";
 function NavBar() {
   return (
     <nav className="navbar">
+      <div>
+     {/*  Brand (título/nombre de la tienda) */}
+
+        <h2>Tienda de morondanga</h2>
+      </div>
       <ul>
         <li>
           <a href="/">Inicio</a>
