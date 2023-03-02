@@ -6,7 +6,7 @@ const productos = [
       price: 10,
       pictureUrl: URL,
       stock:5,
-      type: "tipo de producto",
+      type: "TipodeUno",
       
     },
     {
@@ -16,7 +16,7 @@ const productos = [
       price: 20,
       pictureUrl: URL,
       stock:5,
-      type: "tipo de producto",
+      type: "TipodeUno",
       
     },
     {
@@ -26,7 +26,37 @@ const productos = [
       price: 30,
       pictureUrl: URL,
       stock:5,
-      type: "tipo de producto",
+      type: "TipodeDos",
+      
+    },
+    {
+        id: 4,
+        name: "Producto 4",
+        description: "Descripción del producto 3",
+        price: 30,
+        pictureUrl: URL,
+        stock:5,
+        type: "TipodeDos",
+        
+      },
+      {
+      id: 5,
+      name: "Producto 5",
+      description: "Descripción del producto 3",
+      price: 30,
+      pictureUrl: URL,
+      stock:5,
+      type: "TipodeTres",
+      
+    },
+    {
+      id: 6,
+      name: "Producto 6",
+      description: "Descripción del producto 3",
+      price: 30,
+      pictureUrl: URL,
+      stock:5,
+      type: "TipodeTres",
       
     },
   ]

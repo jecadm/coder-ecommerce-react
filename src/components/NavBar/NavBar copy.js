@@ -4,8 +4,6 @@ import './NavBar.css';
 import { FaShoppingCart } from "react-icons/fa";
 //import { Link } from 'react-router-dom';
 import CartWidget from '../Items/CartWidget';
-import ItemListContainer from "../ItemListContainer/ItemListContainer";
-import Brand from "../Brand";
 
 function NavBar() {
 
@@ -15,29 +13,16 @@ function NavBar() {
 
   return (
     <nav className="navbar">
+      <div>
+     {/*  Brand (título/nombre de la tienda) */}
 
-      <div className="conteinerBrand">
-        <Brand/>
-        
-        </div>
-     <div>
-     
-      <h2>Tienda MORONDANGA</h2>
+        <h2>Tienda MORONDANGA</h2>
       </div>
       
-      <div className="containerItemList navar-booton ">
-        <ItemListContainer 
-        itemUno = "TipodeUno"
-        itemDos = "TipodeDos"
-        itemTres = "TipodeTres"
-        //itemCuatro = "TipodeCuatro"
-        />
+      <div>
      
         
-      </div>
-      <div className="containercart">
-        <CartWidget/>
-      </div>
+         </div>
 
       <ul>
         <li>

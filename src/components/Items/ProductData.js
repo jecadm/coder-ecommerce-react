@@ -29,6 +29,40 @@ const products = [
       type: "tipo de producto",
       
     },
+    {
+      id: 4,
+      name: "Producto 3",
+      description: "Descripción del producto 3",
+      price: 30,
+      pictureUrl: URL,
+      stock:5,
+      type: "tipo de producto",
+      
+    },
+    {
+    id: 5,
+    name: "Producto 3",
+    description: "Descripción del producto 3",
+    price: 30,
+    pictureUrl: URL,
+    stock:5,
+    type: "tipo de producto",
+    
+  },
+  {
+    id: 6,
+    name: "Producto 3",
+    description: "Descripción del producto 3",
+    price: 30,
+    pictureUrl: URL,
+    stock:5,
+    type: "tipo de producto",
+    
+  },
+
+
+
+
   ];
   
   export function getProducts() {

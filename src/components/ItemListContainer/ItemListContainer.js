@@ -2,23 +2,32 @@ import React, { useState, useEffect } from "react";
 import { getProducts } from "../Items/ProductData";
 import ItemList from "../Items/ItemList";
 import "./ItemListContainer.css";
+import {Link} from "react-router-dom"
 
-function ItemListContainer({ greeting })  {
-  const [products, setProducts] = useState([]);
+const ItemListContainer = (props)=>{
 
-  useEffect(() => {
-    getProducts().then((data) => {
-      setProducts(data);
-    });
-  }, []);
+
 
   return (
-    <div className="item-list-container">
-      <h2>Productos</h2>
-      <h2>{greeting}</h2>
-      <ItemList products={products} />
-      <p>Este es un ejemplo de componente contenedor con styling integrado</p>
-    </div>
+
+    <ul>
+      <li>
+      <Link to="category/TipodeUno">{props.itemUno}</Link>
+      </li>
+      <li>
+      <Link to="category/TipodeDos">{props.itemDos}</Link>
+        </li>
+      <li>
+      <Link to="category/TipodeTres">{props.itemTres}</Link>
+      </li>
+     
+    </ul>
+
+
+
+
+
+    
   );
 }
 

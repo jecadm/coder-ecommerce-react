@@ -37,3 +37,21 @@
     font-size: 12px;
     margin-left: 5px;
   }
+
+  .conteinerBrand{
+
+    width: 5px;
+    min-width: 5px;
+    height: 5px;
+    display: flex;
+    justify-content: left;
+  }
+
+ .conteinerBrand img{
+    transform: scale(0.1);
+  }
+  .containerItemList ul li{
+    text-decoration: none;
+    margin: 0 0 0  50px;
+    color: var(--color-txt-nav);
+  }

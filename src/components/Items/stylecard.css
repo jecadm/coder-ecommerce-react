@@ -29,8 +29,9 @@
 
 .cardItem .cardImg img{
 
-   width: 100%;
-
+   width: 75%;
+   /*transform: scale(0.6);
+*/
 
 }
 
@@ -103,6 +104,6 @@ border-radius: 40px;
 
 
 }
-.buttons #Cart img{
-    border: 2px solid green;
-}
+/*.buttons #Cart img{
+    border: 2px solid rgb(24, 27, 24);
+}*/
