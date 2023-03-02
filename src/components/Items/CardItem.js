@@ -1,22 +1,22 @@
 import ButtonAddCar from "./ButtonAddCar";
-import ButtonDetail from "./buttonDetalle";
+import ButtonDetail from "./ButtonDetalle";
 import Description from "./Description";
 import "../../components/Items/stylecard.css"
 import  Image from "./img";
 import ImgTest from "../../img/easte.svg"
 
 
-const CardItem = () => {
+const CardItem = (props) => {
 
     return(
 
     <div className="cardItem" >
 
-        <Image imagen={ImgTest}/>
+        <Image imagen={props.imagen}/>
         <Description 
-        title = "algo va por aca "
-        cantidad = {5}
-        precio = {8000}
+        title = {props.title}
+        cantidad = {props.cantidad}
+        precio = {props.precio}
         />
 
         <div className="buttons">

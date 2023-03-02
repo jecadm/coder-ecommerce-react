@@ -1,4 +1,4 @@
-const products = [
+const productos = [
     {
       id: 1,
       name: "Producto 1",
@@ -29,12 +29,5 @@ const products = [
       type: "tipo de producto",
       
     },
-  ];
-  
-  export function getProducts() {
-    return new Promise((resolve) => {
-      setTimeout(() => {
-        resolve(products);
-      }, 2000);
-    });
-  }
+  ]
+  export default productos;
