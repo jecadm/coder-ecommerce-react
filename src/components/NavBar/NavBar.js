@@ -2,6 +2,8 @@
 import React from "react";
 import './NavBar.css';
 import { FaShoppingCart } from "react-icons/fa";
+//import { Link } from 'react-router-dom';
+import CartWidget from '../Items/CartWidget';
 
 function NavBar() {
 
@@ -17,7 +19,10 @@ function NavBar() {
         <h2>Tienda MORONDANGA</h2>
       </div>
       
-
+      <div>
+     
+        
+         </div>
 
       <ul>
         <li>
