@@ -32,10 +32,14 @@ fetchSimultion(productos, 1000)
     datos.map(product => (
          <CardItem 
          key={product.id}
+         id={product.id}
          imagen={product.picture}
          title={product.name}
          cantidad={product.stock}
          precio={product.price}
+         
+
+
 
   />
     ))

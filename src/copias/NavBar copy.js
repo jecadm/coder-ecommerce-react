@@ -3,7 +3,7 @@ import React from "react";
 import './NavBar.css';
 import { FaShoppingCart } from "react-icons/fa";
 //import { Link } from 'react-router-dom';
-import CartWidget from '../Items/CartWidget';
+import CartWidget from '../components/Items/CartWidget';
 
 function NavBar() {
 

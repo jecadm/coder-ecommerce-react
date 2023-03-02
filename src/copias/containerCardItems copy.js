@@ -1,6 +1,6 @@
-import CardItem from "./CardItem";
-import fetchSimultion from "../fetchSimulation";
-import productos from "./Productos";
+import CardItem from "../components/Items/CardItem";
+import fetchSimultion from "../components/fetchSimulation";
+import productos from "../components/Items/Productos";
 import { useState, useEffect } from "react";
 import "../Items/containerCardItems.css"
 import { useParams } from "react-router-dom";

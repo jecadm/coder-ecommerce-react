@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { getProducts } from "../Items/ProductData";
-import ItemList from "../Items/ItemList";
+import { getProducts } from "../components/Items/ProductData";
+import ItemList from "../components/Items/ItemList";
 import "./ItemListContainer.css";
 
 function ItemListContainer({ greeting })  {
