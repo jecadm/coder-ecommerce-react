@@ -1,17 +1,21 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import ItemDetail from "./ProductData";
-import { getItem } from "../async-mocks/items";
+import ItemList from "./ItemList";
+import { getItemsByCategory, getItems } from "./ItemList";
 
-function ItemDetailContainer() {
-  const { itemId } = useParams();
-  const [item, setItem] = useState(null);
+function ItemListContainer() {
+  const { categoryId } = useParams();
+  const [items, setItems] = useState([]);
 
   useEffect(() => {
-    getItem(itemId).then((response) => setItem(response));
-  }, [itemId]);
+    if (categoryId) {
+      getItemsByCategory(categoryId).then((response) => setItems(response));
+    } else {
+      getItems().then((response) => setItems(response));
+    }
+  }, [categoryId]);
 
-  return <ItemDetail item={item} />;
+  return <ItemList items={items} />;
 }
 
-export default ItemDetailContainer;
+export default ItemListContainer;
