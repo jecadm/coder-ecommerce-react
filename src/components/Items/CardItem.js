@@ -13,8 +13,13 @@ const CardItem = () => {
     <div className="cardItem" >
 
         <Image imagen={ImgTest}/>
-        <Description title="algo va por aca "/>
-        <div className="btn">
+        <Description 
+        title = "algo va por aca "
+        cantidad = {5}
+        precio = {8000}
+        />
+
+        <div className="buttons">
             <ButtonDetail />
             <ButtonAddCar  />
 
