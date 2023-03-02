@@ -24,7 +24,7 @@ const CardItem = (props) => {
             <ButtonAddCar  />
 
         </div>
-    
+     
 
 
     </div>
