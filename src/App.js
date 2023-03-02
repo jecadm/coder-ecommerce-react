@@ -12,7 +12,7 @@ function App() {
      
      <NavBar />
      {/* ItemListContainer. Impórtalo dentro de App.js, y abajo de NavBar.js */} 
-     <ItemListContainer/>
+     <ItemListContainer greeting={'Bienvenidos al morondanga'}/>
 
     </>
   )

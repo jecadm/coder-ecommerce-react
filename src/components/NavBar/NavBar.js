@@ -16,6 +16,9 @@ function NavBar() {
 
         <h2>Tienda MORONDANGA</h2>
       </div>
+      
+
+
       <ul>
         <li>
           <button className="navar-booton" onClick={()=> clickHandler()}  href="/">Inicio</button>
