@@ -1,29 +1,24 @@
-
 import './App.css';
+import NavBar from './components/NavBar/NavBar';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Navbar from "./components/NavBar/NavBar";
-import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
-import ItemDetailContainer from "./components/Items/ItemDetailContainer";
+import CardItem from './components/Items/CardItem';
+
 
 function App() {
   return (
-    <Router>
-      <div>
-        <Navbar />
-        <Switch>
-          <Route path="/" exact>
-            <ItemListContainer />
-          </Route>
-          <Route path="/category/:categoryId">
-            <ItemListContainer />
-          </Route>
-          <Route path="/item/:itemId">
-            <ItemDetailContainer />
-          </Route>
-        </Switch>
-      </div>
-    </Router>
-  );
+    <>
+     
+     <NavBar />
+     <CardItem />
+     
+     
+     {/* ItemListContainer. Impórtalo dentro de App.js, y abajo de NavBar.js */} 
+     <ItemListContainer greeting={'Bienvenidos al morondanga'}/>
+
+    </>
+  )
 }
 
 export default App;
